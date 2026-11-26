@@ -1,5 +1,7 @@
 # ChatGPT Desktop Commander
 
+[简体中文](README.zh-CN.md) | **English**
+
 **Self-hosted MCP server and desktop agent for accessing your own files, terminal, processes, and SSH sessions from an MCP-compatible client.**
 
 ChatGPT Desktop Commander consists of a local **Agent** and an HTTP **Relay**. The Agent connects outbound to the Relay over WebSocket; the Relay exposes a Streamable HTTP MCP endpoint for remote clients. For local MCP clients, a direct stdio mode is also available.

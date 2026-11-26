@@ -1,7 +1,7 @@
 {
   "name": "chatgpt-desktop-commander",
   "version": "1.0.0",
-  "description": "免费自建的 ChatGPT 网页版本机指挥官：远程 MCP Relay + 本地 Agent，让网页版 ChatGPT 读写你的本地文件、执行终端命令",
+  "description": "Self-hosted MCP server and desktop agent for files, terminal, processes and SSH",
   "type": "module",
   "main": "src/index.js",
   "bin": {
