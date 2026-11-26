@@ -1,0 +1,31 @@
+{
+  "name": "chatgpt-desktop-commander",
+  "version": "1.0.0",
+  "description": "免费自建的 ChatGPT 网页版本机指挥官：远程 MCP Relay + 本地 Agent，让网页版 ChatGPT 读写你的本地文件、执行终端命令",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "cdc-agent": "bin/agent.js",
+    "cdc-relay": "bin/relay.js",
+    "cdc-stdio": "bin/stdio.js"
+  },
+  "scripts": {
+    "start": "bash scripts/start.sh",
+    "stop": "bash scripts/stop.sh",
+    "restart": "bash scripts/stop.sh && bash scripts/start.sh",
+    "status": "bash scripts/status.sh",
+    "relay": "node bin/relay.js",
+    "agent": "node bin/agent.js",
+    "stdio": "node bin/stdio.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "ssh2": "^1.17.0",
+    "ws": "^8.22.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "relay": {
+    "host": "127.0.0.1",
+    "port": 8723,
+    "mcpPath": "/mcp",
+    "bridgePath": "/bridge",
+    "apiKey": "changeme-generate-a-strong-key",
+    "bridgeToken": "changeme-generate-a-strong-token",
+    "publicUrl": "",
+    "agentTimeoutMs": 120000
+  },
+  "agent": {
+    "relayUrl": "ws://127.0.0.1:8723/bridge",
+    "reconnectMs": 5000,
+    "heartbeatMs": 15000,
+    "deviceName": "my-device",
+    "allowedDirs": ["/absolute/path/to/your/workspace"],
+    "allowAllDirs": false,
+    "allowShell": true,
+    "allowSsh": false,
+    "shellCwdMustBeAllowed": true,
+    "commandTimeoutMs": 60000,
+    "commandMaxOutputBytes": 204800,
+    "maxConcurrency": 4,
+    "writeFileMaxBytes": 1048576,
+    "readFileMaxBytes": 1048576,
+    "searchMaxResults": 100,
+    "backupOnWrite": true
+  }
+}
